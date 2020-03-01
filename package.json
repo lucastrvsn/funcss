@@ -1,0 +1,15 @@
+{
+  "name": "adlez",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Lucas Trevisan <lucastrvsn@gmail.com>",
+  "repository": "https://github.com/lucastrvsn/adlez.git",
+  "main": "dist/index.js",
+  "typings": "dist/types/index.d.ts",
+  "scripts": {
+    "start:dev": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
