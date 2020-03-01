@@ -1,13 +1,17 @@
 {
   "name": "adlez",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Lucas Trevisan <lucastrvsn@gmail.com>",
   "repository": "https://github.com/lucastrvsn/adlez.git",
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start:dev": "tsc -w"
+    "start:dev": "tsc -w",
+    "prepublish": "tsc"
   },
   "devDependencies": {
     "typescript": "^3.8.3"
