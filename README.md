@@ -11,19 +11,36 @@ yarn add adlez
 ## Usage
 
 ```js
-import a, { color, rgb, hover } from 'adlez'
+import adlez, { color, rgb, hover } from 'adlez'
 
 const el = document.createElement('div')
-el.className = a(color(rgb(255, 0, 0)), hover(color(rgb(0, 255, 255))))
 
-/** output:
- * css-awe12ic {
- *  color: rgb(255, 0, 0);
- * }
- * css-awe12ic:hover {
- *  color: rgb(0, 255, 255);
- * }
- */
+el.className = adlez(
+  color(rgb(255, 0, 0)),
+  hover(
+    color(rgb(0, 255, 255))
+  )
+)
+```
+
+```js
+import React from 'react'
+import adlez, { color, bgColor, rgb, rgba, hover } from 'adlez'
+
+const btn = adlez(
+  color(rgb(255, 0, 0)),
+  bgColor(rgba(255, 255, 0, 0.4))
+  hover(
+    color(rgb(0, 255, 255))
+    bgColor(rgba(255, 255, 0, 1))
+  )
+)
+
+function Button() {
+  return <button className={btn}>Button</button>
+}
+
+export default Button
 ```
 
 ## Planned features
