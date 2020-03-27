@@ -1,27 +1,24 @@
 {
   "name": "adlez",
-  "version": "1.0.1",
-  "private": true,
+  "version": "0.0.1",
   "license": "MIT",
   "author": "Lucas Trevisan <lucastrvsn@gmail.com>",
   "repository": "https://github.com/lucastrvsn/adlez.git",
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
   "files": [
-    "dist"
-  ],
-  "workspaces": [
-    "packages/*"
+    "dist",
+    "package.json",
+    "README.md"
   ],
   "scripts": {
-    "test": "lerna run test",
-    "watch": "lerna run watch",
-    "build": "lerna run build --stream",
-    "clean:dist": "lerna exec -- rm -rf ./dist",
-    "prepublishOnly": "tsc"
+    "build": "tsc",
+    "clean:dist": "rm -rf ./dist",
+    "prepublishOnly": "build",
+    "test": "jest",
+    "watch": "tsc --watch"
   },
   "devDependencies": {
-    "lerna": "^3.20.2",
     "typescript": "^3.8.3"
   }
 }
