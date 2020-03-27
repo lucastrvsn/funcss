@@ -3,6 +3,7 @@ import { StyleObject } from '../core'
 const transform = (styles: StyleObject[]): StyleObject =>
   styles.reduce((acc, cur) => {
     const [prop, value] = Object.entries(cur)[0]
+
     return { ...acc, [prop]: value }
   }, {})
 

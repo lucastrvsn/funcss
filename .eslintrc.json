@@ -1,0 +1,54 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": ["@typescript-eslint", "jest", "prettier"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "no-void": "off",
+    "semi": [2, "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-shadow": 0,
+    "global-require": 0,
+    "no-return-assign": ["error", "always"],
+    "newline-before-return": "error",
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "no-template-curly-in-string": 0,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "consistent-return": 0,
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    "linebreak-style": 0,
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 1
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "prettier/prettier": "error"
+  }
+}

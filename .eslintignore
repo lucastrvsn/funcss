@@ -1,0 +1,6 @@
+.git
+.npmrc
+.yarnrc
+dist
+node_modules
+coverage
