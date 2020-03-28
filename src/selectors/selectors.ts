@@ -8,25 +8,25 @@ const transform = (styles: StyleObject[]): StyleObject =>
   }, {})
 
 export const after = (styles: StyleObject[]) => ({
-  '::after': transform(styles)
+  '::after': transform(styles),
 })
 
 export const before = (styles: StyleObject[]) => ({
-  '::before': transform(styles)
+  '::before': transform(styles),
 })
 
 export const hover = (styles: StyleObject[]) => ({
-  ':hover': transform(styles)
+  ':hover': transform(styles),
 })
 
 export const active = (styles: StyleObject[]) => ({
-  ':active': transform(styles)
+  ':active': transform(styles),
 })
 
 export const checked = (styles: StyleObject[]) => ({
-  ':checked': transform(styles)
+  ':checked': transform(styles),
 })
 
 export const disabled = (styles: StyleObject[]) => ({
-  ':disabled': transform(styles)
+  ':disabled': transform(styles),
 })

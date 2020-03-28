@@ -25,5 +25,5 @@ export {
   isHEX,
   isColor,
   parseColor,
-  default as color
+  default as color,
 } from './color'

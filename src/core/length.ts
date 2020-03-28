@@ -9,7 +9,7 @@ export const relativeLengthUnit = [
   'vh',
   'vmin',
   'vmax',
-  '%'
+  '%',
 ] as const
 
 export type AbsoluteLengthUnit = typeof absoluteLengthUnit[number]
@@ -25,72 +25,72 @@ export interface Length {
 
 export const cm = (value: number): Length => ({
   type: 'length',
-  value: [value, 'cm']
+  value: [value, 'cm'],
 })
 
 export const mm = (value: number): Length => ({
   type: 'length',
-  value: [value, 'mm']
+  value: [value, 'mm'],
 })
 
 export const px = (value: number): Length => ({
   type: 'length',
-  value: [value, 'px']
+  value: [value, 'px'],
 })
 
 export const pt = (value: number): Length => ({
   type: 'length',
-  value: [value, 'pt']
+  value: [value, 'pt'],
 })
 
 export const pc = (value: number): Length => ({
   type: 'length',
-  value: [value, 'pc']
+  value: [value, 'pc'],
 })
 
 export const em = (value: number): Length => ({
   type: 'length',
-  value: [value, 'em']
+  value: [value, 'em'],
 })
 
 export const ex = (value: number): Length => ({
   type: 'length',
-  value: [value, 'ex']
+  value: [value, 'ex'],
 })
 
 export const ch = (value: number): Length => ({
   type: 'length',
-  value: [value, 'ch']
+  value: [value, 'ch'],
 })
 
 export const rem = (value: number): Length => ({
   type: 'length',
-  value: [value, 'rem']
+  value: [value, 'rem'],
 })
 
 export const vw = (value: number): Length => ({
   type: 'length',
-  value: [value, 'vw']
+  value: [value, 'vw'],
 })
 
 export const vh = (value: number): Length => ({
   type: 'length',
-  value: [value, 'vh']
+  value: [value, 'vh'],
 })
 
 export const vmin = (value: number): Length => ({
   type: 'length',
-  value: [value, 'vmin']
+  value: [value, 'vmin'],
 })
 
 export const vmax = (value: number): Length => ({
   type: 'length',
-  value: [value, 'vmax']
+  value: [value, 'vmax'],
 })
 
 export const p = (value: number): Length => ({
   type: 'length',
-  value: [value, '%']
+  value: [value, '%'],
 })
 
 const parse = (value: Length) => `${value.value[0]}${value.value[1]}`

@@ -1,3 +1,3 @@
-const theme = (path: string) => 'red'
+const theme = (path: string) => path
 
 export default theme

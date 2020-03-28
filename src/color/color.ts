@@ -683,14 +683,19 @@ export const parseHSL = (value: HSLColor): string =>
 
 export const parseHEX = (value: HEXColor): string => value
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const isRGB = (value: any) => value?.type === 'rgb'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const isRGBA = (value: any) => value?.type === 'rgba'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const isHSL = (value: any) => value?.type === 'hsl'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const isHEX = (value: any) => value?.type === 'hex'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const isColor = (value: any) =>
   isRGB(value) || isRGBA(value) || isHSL(value) || isHEX(value)
 
@@ -719,7 +724,7 @@ export const parseColor = (color: Color): string => {
 }
 
 const color = (value: Color) => ({
-  color: (isColor(value) ? parseColor(value) : value) as string
+  color: (isColor(value) ? parseColor(value) : value) as string,
 })
 
 export default color

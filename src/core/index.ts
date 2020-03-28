@@ -17,6 +17,6 @@ export {
   vmin,
   vmax,
   p,
-  default as parseLength
+  default as parseLength,
 } from './length'
 export { StyleObject, default as parse } from './parse'

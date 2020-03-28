@@ -23,9 +23,10 @@ const selectors = (styles: StyleObject): StyleObject =>
 const transformSelectors = (styles: StyleObject) =>
   Object.entries(selectors(styles)).map(([selector, value]) => [
     selector,
-    transform(value)
+    transform(value),
   ])
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const combine = (css: string) => (...array: any[]): string =>
   array.reduce((acc, current) => {
     console.log(current)

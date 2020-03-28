@@ -1,4 +1,5 @@
 export type StyleObject = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: StyleObject | StyleObject[] | string | any
 }
 
@@ -9,7 +10,7 @@ const parse = (styles: StyleObject[]): StyleObject =>
 
     return {
       ...acc,
-      [prop]: Array.isArray(value) ? parse(value) : value
+      [prop]: Array.isArray(value) ? parse(value) : value,
     }
   }, {})
 

@@ -14,5 +14,5 @@ const parse = (value: BackgroundSize) => {
 }
 
 export const bgSize = (value: BackgroundSize) => ({
-  backgroundSize: parse(value)
+  backgroundSize: parse(value),
 })

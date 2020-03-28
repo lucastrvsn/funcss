@@ -13,5 +13,5 @@ export type BorderStyle =
   | 'inherit'
 
 export const borderStyle = (value: BorderStyle) => ({
-  borderStyle: value
+  borderStyle: value,
 })
