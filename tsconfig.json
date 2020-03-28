@@ -8,8 +8,9 @@
     "esModuleInterop": true,
     "declaration": true,
     "outDir": "./dist",
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "types": ["node", "jest"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }
