@@ -1,5 +1,7 @@
 # adlez
 
+![Publish](https://github.com/lucastrvsn/adlez/workflows/Publish/badge.svg?branch=master&event=push)
+
 > opinionated atomic way to compose css styles
 
 ## Instalation
@@ -15,12 +17,7 @@ import adlez, { color, rgb, hover } from 'adlez'
 
 const el = document.createElement('div')
 
-el.className = adlez(
-  color(rgb(255, 0, 0)),
-  hover(
-    color(rgb(0, 255, 255))
-  )
-)
+el.className = adlez(color(rgb(255, 0, 0)), hover(color(rgb(0, 255, 255))))
 ```
 
 ```js
